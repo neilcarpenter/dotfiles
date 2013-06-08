@@ -1,3 +1,6 @@
+# NEIL DONE AN ALIAS
+alias begin="open -a Google\ Chrome && open -a MAMP\ PRO && open -a Transmit && open -a CodeKit && open -a Sublime\ Text\ 2 && open -a Messages"
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -10,7 +13,7 @@ alias -- -="cd -"
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
+alias S="cd ~/Sites"
 alias g="git"
 alias h="history"
 alias j="jobs"
