@@ -1,5 +1,6 @@
 # NEIL DONE AN ALIAS
-alias begin="open -a Google\ Chrome && open -a MAMP\ PRO && open -a Transmit && open -a CodeKit && open -a Sublime\ Text\ 2 && open -a Messages"
+alias begin="open -a Google\ Chrome && open -a Sublime\ Text && open -a Spotify && open -a Slack && open -a Sourcetree"
+alias m="open https://mail.google.com/mail/u/0 && open https://mail.google.com/mail/u/1 && open https://mail.google.com/mail/u/2"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -15,13 +16,18 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias S="cd ~/Sites"
 alias g="git"
+alias gu="gulp"
 alias h="history"
 alias j="jobs"
-alias v="vim"
-alias m="mate ."
+alias v="vagrant"
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+
+# the fuck
+alias fuck='$(thefuck $(fc -ln -1))'
+
+alias log2="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=relative"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -128,3 +134,17 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+alias mysql.start="sudo /usr/local/mysql/support-files/mysql.server start"
+alias mysql.stop="sudo /usr/local/mysql/support-files/mysql.server stop"
+alias mysql.restart="sudo /usr/local/mysql/support-files/mysql.server restart"
+alias mysql.status="sudo /usr/local/mysql/support-files/mysql.server status"
+
+alias wifi-off="networksetup -setairportpower en0 off"
+alias wifi-on="networksetup -setairportpower en0 on"
+
+alias blue-off="blueutil power 0"
+alias blue-on="blueutil power 1"
+
+alias network-off="wifi-off && blue-off"
+alias network-on="wifi-on && blue-on"
